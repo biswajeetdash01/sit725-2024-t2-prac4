@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Import MaterializeCSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <style>
+    .portfolio-header {
+      background-color: #f34121;
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .portfolio-content {
+      padding: 50px 0;
+    }
+  </style>
+</head>
+<body>
+  <!------ Navbar ------>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">My Portfolio</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="portfolio-header">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Biswas B Dash a student by day and developer by night.</p>
+  </header>
+
+  <!-- About Section -->
+  <div id="about" class="container portfolio-content">
+    <h2>About Me</h2>
+    <p>My name is Biswas, but you can call me Jeet. I have previous experience as an Analyst in an MNC, where I supported multiple clients as a Microsoft O365 engineer for Universal Studios for around two years. Currently, I am pursuing a Master's in IT (Professional) at Deakin University. I love traveling and look forward to discovering the beautiful city of Melbourne.</p>
+  </div>
+
+  <!-- Projects Section -->
+  <div id="projects" class="container portfolio-content">
+    <h2>Projects</h2>
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="./image/heart.jpeg">
+            <span class="card-title">Heart disease prediction</span>
+          </div>
+          <div class="card-content">
+            <p>In the heart disease prediction project, we developed a prediction model using Python and various libraries. This model helps predict a person's heart health based on parameters such as blood pressure, heart rate, and sugar level. This prediction is very useful for detecting heart diseases with early symptoms.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="./image/youtube2.jpeg">
+            <span class="card-title">Youtube ad-view prediction</span>
+          </div>
+          <div class="card-content">
+            <p>In the heart disease prediction project, we developed a prediction model using Python and various libraries. This model helps predict growth of a youtube video by the help of some parameters like views , subs, comments and likes. This project can predict how much successful is that video will be in future.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="./image/fake news.jpeg">
+            <span class="card-title">Fake news detection</span>
+          </div>
+          <div class="card-content">
+            <p>In fake news detection project , we developed a prediction model using Python and various libraries. This model can read through the news and can predict and detect that the news is accurate or not.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="container portfolio-content">
+    <h2>Contact</h2>
+    <form id="contactForm">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="name" type="text" class="validate" name="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12">
+                <textarea id="message" class="materialize-textarea" name="message" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+</div>
+
+  <!-- Import Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+</html>
